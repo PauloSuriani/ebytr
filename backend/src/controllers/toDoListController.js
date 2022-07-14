@@ -5,7 +5,7 @@ const getAllTasks = async(_req, res) => {
     const tasks = await toDoListService.getAllTasks();
     return res.status(200).json(tasks);
   } catch (error){
-    return res.status(401).json({message: 'Server issues'});
+    return res.status(404).json({message: 'Not found: Server issues'});
   }
 }
 

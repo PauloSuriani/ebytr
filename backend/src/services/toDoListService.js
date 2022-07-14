@@ -6,5 +6,5 @@ const getAllTasks = async () => {
 }
 
 module.exports = {
-    getAllTasks,
+  getAllTasks,
 }
